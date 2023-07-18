@@ -1,0 +1,49 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.primary-txt {
+  @apply text-[rgb(231,29,54,1)];
+}
+
+.banner {
+  background: linear-gradient(
+    90deg,
+    #ffe6e6 0%,
+    #f5fffe 26.81%,
+    #fcf3ff 54.58%,
+    #fff4e6 99.86%
+  );
+}
+
+.banner-wave {
+  background-image: url(../src/assets/wave.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.active-li {
+  @apply border-b-2 border-b-[rgb(231,29,54,1)];
+}
+
+.primary-btn {
+  @apply bg-[rgb(231,29,54,1)] text-white px-10 py-3 rounded-3xl cursor-pointer;
+}
+
+.form {
+  background: linear-gradient(
+      0deg,
+      rgba(231, 29, 53, 0.113),
+      rgba(231, 29, 53, 0.119)
+    ),
+    linear-gradient(
+      180deg,
+      rgba(255, 208, 214, 0.5) 0%,
+      rgba(255, 231, 198, 0.5) 100%
+    );
+  border: 5px solid rgba(231, 29, 54, 0.27);
+}
