@@ -2,10 +2,35 @@
 
 import React from "react";
 import Navbar from "../Navbar/Navbar";
+import Swal from "sweetalert2";
 
 const Banner = () => {
   const handleContacts = (e) => {
     e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const phone = e.target.phone.value;
+    const otp = e.target.otp.value;
+
+    const user = { name, email, phone, otp };
+
+    fetch("https://zeppstr-server.vercel.app/users", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify(user),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          Swal.fire(
+            "Your contact info has been saved",
+            "Please check you email !",
+            "success"
+          );
+          e.target.reset();
+        }
+      })
+      .catch((err) => Swal.fire(`An Error occurred: ${err.message}`));
   };
 
   return (
@@ -41,18 +66,21 @@ const Banner = () => {
               <input
                 type="text"
                 name="name"
+                required
                 placeholder="NAME"
                 className="input w-full "
               />
               <input
                 type="email"
                 name="email"
+                required
                 placeholder="EMAIL ID"
                 className="input w-full "
               />
               <input
                 type="tel"
                 name="phone"
+                required
                 placeholder="PHONE"
                 className="input w-full "
               />
