@@ -32,7 +32,7 @@ const Accordion = () => {
           </button>
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 my-20 h-96">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-0 my-20 h-96">
         <AccordionGroup />
 
         <div className="text-white text-justify bg-[#4782F5] p-6 second-scroll  overflow-y-auto">

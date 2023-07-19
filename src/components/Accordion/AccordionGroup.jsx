@@ -2,7 +2,7 @@
 
 const AccordionGroup = () => {
   return (
-    <div className="px-4 font-bold bg-[#F2F8FE] space-y-5 pt-8 overflow-y-auto h-full">
+    <div className="px-4 font-bold bg-[#F2F8FE] space-y-5 pt-8 hide-scroll overflow-y-auto h-full">
       <h2 className="text-3xl text-[#ED7848]">Some of FAQ's</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
