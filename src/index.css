@@ -95,3 +95,48 @@
 .link-txt {
   @apply primary-txt font-semibold items-center flex gap-3 cursor-pointer;
 }
+
+.accordion-info {
+  background: linear-gradient(
+    90deg,
+    #ffe6e6 0%,
+    #f5fffe 26.81%,
+    #fcf3ff 54.58%,
+    #fff4e6 99.86%
+  );
+  height: 407px;
+}
+
+.seo-input {
+  @apply border border-indigo-200  placeholder:text-black shadow-2xl shadow-indigo-200 bg-white input rounded-3xl;
+}
+
+/* custom-scrollbar.css */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+html {
+  scrollbar-width: thin;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+.second-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.second-scroll::-webkit-scrollbar-thumb {
+  background: #fb4ea4;
+}
