@@ -77,3 +77,21 @@
   box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
   @apply border-2 rounded-3xl p-5 w-full md:max-w-[270px] border-t-[rgb(46,196,182,1)] border-x-[rgba(46,196,181,0.61)] border-opacity-40;
 }
+
+.card-primary {
+  height: 198px;
+  @apply border-2 rounded-3xl p-5 w-full md:max-w-[416px] border-r-red-500 border-y-red-400 border-opacity-40 flex gap-4 items-center;
+}
+
+.card-bg {
+  background: linear-gradient(
+      270deg,
+      rgba(231, 29, 53, 0.162) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(0deg, #fff8f8, #fff8f8);
+}
+
+.link-txt {
+  @apply primary-txt font-semibold items-center flex gap-3 cursor-pointer;
+}

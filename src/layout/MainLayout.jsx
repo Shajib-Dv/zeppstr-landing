@@ -2,6 +2,7 @@
 
 import Banner from "../components/Banner/Banner";
 import Brands from "../components/GlobalBrands/Brands";
+import Industries from "../components/Industries/Industries";
 import OfferedService from "../components/OfferedService/OfferedService";
 
 const MainLayout = () => {
@@ -10,6 +11,7 @@ const MainLayout = () => {
       <Banner />
       <Brands />
       <OfferedService />
+      <Industries />
     </>
   );
 };
