@@ -47,3 +47,33 @@
     );
   border: 5px solid rgba(231, 29, 54, 0.27);
 }
+
+.input:focus {
+  @apply outline-none border-none placeholder:text-red-600;
+}
+
+.brand-container {
+  background: rgba(255, 251, 251, 1);
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.11);
+}
+
+.second-btn {
+  width: 173px;
+  height: 52px;
+  border-radius: 10px;
+  background: #2ec4b6;
+  box-shadow: 0px 4px 12px 0px #2ec4b67a;
+  color: white;
+}
+
+.primary-card {
+  height: 333px;
+  box-shadow: 0px 4px 13px 0px #0000000f;
+  @apply border-2 rounded-3xl p-5 w-full md:max-w-[270px] border-t-red-500 border-x-red-400 border-opacity-40;
+}
+.secondary-card {
+  height: 333px;
+  background: #f6fffe;
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.06);
+  @apply border-2 rounded-3xl p-5 w-full md:max-w-[270px] border-t-[rgb(46,196,182,1)] border-x-[rgba(46,196,181,0.61)] border-opacity-40;
+}

@@ -4,12 +4,16 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 
 const Banner = () => {
+  const handleContacts = (e) => {
+    e.preventDefault();
+  };
+
   return (
     <div className="banner">
-      <div className="banner-wave max-w-[1440px] min-h-[788px] px-8">
+      <div className="banner-wave max-w-[1440px] min-h-[788px] md:px-8">
         <Navbar />
         <div className="h-full mt-36">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-32">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-32 px-2">
             <div className="w-full md:w-[522px] h-full md:h-[416px] pl-4">
               <p className="text-5xl">
                 Best{" "}
@@ -30,7 +34,10 @@ const Banner = () => {
                 <p className="primary-txt underline"> Free Website Audit</p>
               </div>
             </div>
-            <form className="w-full md:w-[498px] h-full md:h-[498px] form px-6 pt-12 pb-2 space-y-5">
+            <form
+              onSubmit={handleContacts}
+              className="w-full md:w-[498px] h-full md:h-[498px] form px-6 pt-12 pb-2 space-y-5"
+            >
               <input
                 type="text"
                 name="name"
